@@ -17,7 +17,7 @@ public class Square : MonoBehaviour
         var player = collision.GetComponent<Ball>();
         if (player != null)
         {
-            
+            player.currentScore += point;
             gameObject.SetActive(false);
         }
     }
